@@ -1,0 +1,1 @@
+3*(-4*F*l*m*cos(phi) - 8*M*b*dphi + 4*M*g*l*m*sin(phi) - 8*b*dphi*m + 4*c*ds*l*m*cos(phi) - dphi**2*l**2*m**2*sin(2*phi) + 4*g*l*m**2*sin(phi))/(l**2*m*(14*M - 3*m*cos(2*phi) + 11*m))
