@@ -151,7 +151,7 @@ def main():
     forward_prediction[:, 0] = revert_modulo(forward_prediction[:, 0])
 
     fig, axs = plt.subplots(n)
-    fig.suptitle('Forward Simulation')
+    fig.suptitle('Forward Simulation and Network prediction')
     for i in range(n):
         axs[i].plot(t_eval, forward_simulation_result.y[i], label='true')
         axs[i].plot(t_eval, forward_prediction[:, i], label='pred')
