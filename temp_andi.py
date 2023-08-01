@@ -121,7 +121,7 @@ def main():
         X = np.vstack((X, X_part))
         Y = np.vstack((Y, Y_part))
 
-    mean_X, std_X = X.mean(axis=0), X.std(axis=0) + 1e-8
+    mean_X, std_X = X.mean(axis=0), X.std(axis=0) + 1e-8  # add jitter to ensure std is not zero
     mean_Y, std_Y = Y.mean(axis=0), Y.std(axis=0) + 1e-8
 
     X = (X - mean_X) / std_X
