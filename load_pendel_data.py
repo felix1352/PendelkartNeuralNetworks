@@ -84,7 +84,7 @@ def LoadHdf5Mat(matfilePath):
 
 #data_upswing = LoadHdf5Mat('./aufschwung_regelung.mat')
 
-path = Path('verlade_bruecke.mat')
+path = Path('joystick_control.mat')
 data_upswing = LoadHdf5Mat(path)
 time = data_upswing.get('X').get('Data')
 data_names = data_upswing.get('Y').get('Name')
